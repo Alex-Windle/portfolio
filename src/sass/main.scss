@@ -18,13 +18,10 @@ $egg-cream: #F6E0CC;
 	list-style: none;
 }
 
-header, .divider, nav, .work, .contact, .resume, footer{
-	// border: 1px solid $brown;
-}
-
 body{
 	background: lighten($egg-cream, 9%);
 }
+
 //////////////   header   ////////////////
 header{
 	position: fixed;
@@ -47,13 +44,11 @@ header{
 }
 
 .title{
-	// border: 1px solid red;
 	color: $brown;
 	font-weight: bold;
 }
 
 .subtitle{
-	// border: 1px solid red;
 	color: $brown;
 	font-style: italic;
 	margin-left: 5px;
@@ -62,11 +57,9 @@ header{
 .nav-bar{
 	margin: auto 5%;
 	nav{
-	// border: 1px solid red;
 	display: flex;
 	flex-direction: row;
 		div{
-			// border: 1px dotted blue;
 			color: $brown;
 			font-size: 1.2em;
 			margin: 0px 20px;
@@ -74,7 +67,6 @@ header{
 		div:hover{
 			color: lighten($brown, 45%);
 			font-size: 1.22em;
-			// font-weight: bolder;
 		}
 	}
 }
@@ -89,13 +81,11 @@ header{
 //////////////   work      ////////////////
 .work{
 	ul{
-		// border: 1px solid orange;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		padding: 100px 0 100px 0;
 		li{
-			// border: 1px solid red;
 			width: 300px;
 			img{
 				width: 300px;
@@ -106,7 +96,6 @@ header{
 			}
 			}
 			span{
-				// border: 1px solid blue;
 				font-weight: bold;
 			}
 			a{
@@ -114,7 +103,6 @@ header{
 				padding-right: 10px;
 			}
 			p{
-				// border: 1px solid blue;
 				text-align: justify;
 
 			}
@@ -124,6 +112,7 @@ header{
 			}
 		}
 	}
+
 //////////////   contact   ////////////////
 .contact{
 	border-left: 5px solid lighten($brown, 40%);
@@ -169,7 +158,6 @@ header{
 	}
 	}
 	.details{
-		// border-left: 3px solid #eec6a1;
 		border-left: 3px solid lighten($brown, 40%);
 	    height: 150px;
 	    display: flex;
@@ -187,17 +175,12 @@ header{
 	.details-icon-bar{
 		display: flex;
 		flex-direction: row;
-		// justify-content: space-around;
-		// align-items: center;
-		// 	.fa-github-square, .fa-linkedin-square{
-		// 	color: $brown;
-		// 	}
 		}
 	}
 }
+
 //////////////   resume    ////////////////
 .resume{
-	// border: 3px solid lighten(gray, 15%);
 	border-bottom: 5px solid lighten($brown, 10%);
 	background: $egg-cream;
 	border-radius: 5px;
@@ -208,7 +191,6 @@ header{
 	display: flex;
 	flex-direction: column;
 	.resume-title{
-		// border: 2px dotted red;
 		background-color: darken($egg-cream, 10%);
 		border-bottom: 5px solid lighten($brown, 10%);
 		border-radius: 5px;
@@ -263,6 +245,7 @@ header{
 		}
 	}
 }
+
 //////////////   footer    ////////////////
 footer{
 	background-color: lighten($egg-cream, 5%);
