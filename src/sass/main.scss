@@ -7,6 +7,8 @@
 $brown: darken(#F7E3D0, 70%);
 $egg-cream: #F6E0CC;
 $egg-cream-background: lighten($egg-cream, 9%);
+$brown-hover: darken(#F7E3D0, 25%);
+$charcoal: #63584E;
 
 *{
 	box-sizing: border-box;
@@ -48,8 +50,8 @@ header{
 	color: $brown;
 	font-weight: bold;
 	:hover{
-		color: lighten($brown, 45%);
-		font-size: 1.55em;
+		color: $brown-hover;
+		font-size: 1.525em;
 	}
 }
 
@@ -70,7 +72,7 @@ header{
 			margin: 0px 20px;
 		}
 		div:hover{
-			color: lighten($brown, 45%);
+			color: $brown-hover;
 			font-size: 1.22em;
 		}
 	}
@@ -90,7 +92,7 @@ header{
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		padding: 100px 0 10px 0;
+		padding: 100px 0 0 0;
 		li{
 			width: 300px;
 			img{
@@ -118,26 +120,42 @@ header{
 			}
 		}
 	}
-//////////////   contact divider  ////////////////
-.contact-divider{
-	width: 20%;
-	height: 5px;
-	border-bottom: 1px solid $egg-cream-background;
-	// border: 2px solid red;
-	margin-bottom: 10%;
+//////////////   divider  ////////////////
+.divider{
+    width: 10%;
+    height: 60px;
+    border-bottom: 1px solid #fdf8f3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $charcoal;
+    margin-bottom: 15%;
+    margin-top: 2%;
 }
+.contact-div{
+	margin-bottom: 10%;
+	border-bottom: $egg-cream-background;
+	background-color: $egg-cream-background;
+}
+.resume-div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	.fa{
+		font-size: 2em;
+		color: white;
+		}
+}
+
 //////////////   contact   ////////////////
 .contact{
 	border-left: 5px solid lighten($brown, 40%);
 	border-right: 5px solid lighten($brown, 40%);
 	background: $egg-cream;
-	// overflow: hidden;
 	border-radius: 5px;
-	// height: 270px; FIXME
 	height: 30%;
 	width: 75%;
 	margin: 15px auto;
-	// margin-bottom: 130px;
 	margin-bottom: 5%;
 	display: flex;
 	flex-direction: row;
@@ -200,7 +218,6 @@ header{
 	border-bottom: 5px solid lighten($brown, 10%);
 	background: $egg-cream;
 	border-radius: 5px;
-	// height: 800px;
 	width: 60%;
 	margin: 0px auto;
 	margin-bottom: 130px;
@@ -271,7 +288,7 @@ header{
 
 //////////////   footer    ////////////////
 footer{
-	background-color: lighten($egg-cream, 5%);
+	background-color: $charcoal;
 	border-top: 10px solid darken($egg-cream, 15%);
 	font-size: 2.5em;
 	display: flex;
@@ -279,11 +296,13 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 	height: 150px;
+	.fa{
+		color: $egg-cream-background;
+	}
 }
 /////////////    media queries   //////////////
 @media (max-width: 1200px){
 	*{
-		// background-color: purple;
 		font-size: 1em;
 	}
 }
@@ -299,7 +318,6 @@ footer{
 
 @media (max-width: 500px){
 	*{
-		// background-color: yellow;
 		font-size: 0.95em;
 	}
 	p{
