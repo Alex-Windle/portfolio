@@ -127,8 +127,8 @@ header{
     border-bottom: 1px solid #fdf8f3;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: $charcoal;
-    margin-bottom: 15%;
+    background-color: lighten($charcoal, 20%);
+    margin-bottom: 10%;
     margin-top: 2%;
 }
 .contact-div{
