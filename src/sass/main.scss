@@ -24,6 +24,9 @@ $charcoal: #63584E;
 body{
 	background: $egg-cream-background;
 }
+h2{
+	font-size: 1.4em;
+}
 
 //////////////   header   ////////////////
 header{
@@ -127,7 +130,7 @@ header{
     border-bottom: 1px solid #fdf8f3;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: lighten($charcoal, 20%);
+    background-color: lighten($charcoal, 25%);
     margin-bottom: 10%;
     margin-top: 2%;
 }
@@ -154,7 +157,7 @@ header{
 	background: $egg-cream;
 	border-radius: 5px;
 	height: 30%;
-	width: 75%;
+	width: 80%;
 	margin: 15px auto;
 	margin-bottom: 5%;
 	display: flex;
