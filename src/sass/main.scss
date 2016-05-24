@@ -6,6 +6,7 @@
 
 $brown: darken(#F7E3D0, 70%);
 $egg-cream: #F6E0CC;
+$egg-cream-background: lighten($egg-cream, 9%);
 
 *{
 	box-sizing: border-box;
@@ -19,7 +20,7 @@ $egg-cream: #F6E0CC;
 }
 
 body{
-	background: lighten($egg-cream, 9%);
+	background: $egg-cream-background;
 }
 
 //////////////   header   ////////////////
@@ -46,6 +47,10 @@ header{
 .title{
 	color: $brown;
 	font-weight: bold;
+	:hover{
+		color: lighten($brown, 45%);
+		font-size: 1.55em;
+	}
 }
 
 .subtitle{
@@ -85,7 +90,7 @@ header{
 		flex-direction: row;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		padding: 100px 0 100px 0;
+		padding: 100px 0 10px 0;
 		li{
 			width: 300px;
 			img{
@@ -113,7 +118,14 @@ header{
 			}
 		}
 	}
-
+//////////////   contact divider  ////////////////
+.contact-divider{
+	width: 20%;
+	height: 5px;
+	border-bottom: 1px solid $egg-cream-background;
+	// border: 2px solid red;
+	margin-bottom: 10%;
+}
 //////////////   contact   ////////////////
 .contact{
 	border-left: 5px solid lighten($brown, 40%);
@@ -126,7 +138,7 @@ header{
 	width: 75%;
 	margin: 15px auto;
 	// margin-bottom: 130px;
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -190,7 +202,7 @@ header{
 	border-radius: 5px;
 	// height: 800px;
 	width: 60%;
-	margin: 50px auto;
+	margin: 0px auto;
 	margin-bottom: 130px;
 	display: flex;
 	flex-direction: column;
@@ -271,7 +283,7 @@ footer{
 /////////////    media queries   //////////////
 @media (max-width: 1200px){
 	*{
-		background-color: purple;
+		// background-color: purple;
 		font-size: 1em;
 	}
 }
@@ -287,7 +299,7 @@ footer{
 
 @media (max-width: 500px){
 	*{
-		background-color: yellow;
+		// background-color: yellow;
 		font-size: 0.95em;
 	}
 	p{
