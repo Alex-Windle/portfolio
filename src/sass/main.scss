@@ -22,7 +22,7 @@ $charcoal: #63584E;
 }
 
 body{
-	background: $egg-cream-background;
+	background: darken($egg-cream-background, 3%);
 }
 h2{
 	font-size: 1.4em;
@@ -136,8 +136,8 @@ header{
 }
 .contact-div{
 	margin-bottom: 10%;
-	border-bottom: $egg-cream-background;
-	background-color: $egg-cream-background;
+	border-bottom: darken($egg-cream-background, 3%);
+	background-color: darken($egg-cream-background, 3%);
 }
 .resume-div{
 	display: flex;
